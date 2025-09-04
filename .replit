@@ -27,3 +27,7 @@ args = "python studysage_bot.py"
 
 [workflows.workflow.metadata]
 outputType = "console"
+
+[deployment]
+deploymentTarget = "vm"
+run = ["python", "studysage_bot.py"]
