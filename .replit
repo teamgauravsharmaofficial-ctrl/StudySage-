@@ -21,13 +21,13 @@ args = "StudySage Bot"
 name = "StudySage Bot"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python studysage_bot.py"
-
 [workflows.workflow.metadata]
 outputType = "console"
 
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python main.py"
+
 [deployment]
 deploymentTarget = "vm"
-run = ["python", "studysage_bot.py"]
+run = ["python", "main.py"]
